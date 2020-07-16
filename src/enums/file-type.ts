@@ -1,4 +1,3 @@
-
 export enum FileType {
-    PDF = 'PDF',
+  PDF = 'PDF',
 }

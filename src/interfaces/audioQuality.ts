@@ -1,3 +1,3 @@
 export interface AudioQuality {
-    kbps: number;
+  kbps: number;
 }

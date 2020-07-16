@@ -1,9 +1,7 @@
-
 export class ConferenceRoom {
-    channelId: string;
+  channelId: string;
 
-
-    constructor($channelId: string) {
-        this.channelId = $channelId;
-    }
+  constructor($channelId: string) {
+    this.channelId = $channelId;
+  }
 }

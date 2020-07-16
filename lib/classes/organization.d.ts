@@ -1,5 +1,5 @@
-import { OrganizationType } from "../enums/organization-type";
-import { OrganizationMap } from "../interfaces/organizationMap";
+import { OrganizationType } from '../enums/organization-type';
+import { OrganizationMap } from '../interfaces/organizationMap';
 export declare class Organization {
     organizationId: string;
     name: string;

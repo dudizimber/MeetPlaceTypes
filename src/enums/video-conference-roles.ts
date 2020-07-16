@@ -1,5 +1,4 @@
-
 export enum VideoConferenceRoles {
-    HOST = 'HOST',
-    PARTICIPANT = 'PARTICIPANT'
+  HOST = 'HOST',
+  PARTICIPANT = 'PARTICIPANT',
 }

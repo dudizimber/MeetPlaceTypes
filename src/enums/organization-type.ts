@@ -1,3 +1,3 @@
 export enum OrganizationType {
-    EDUCATION = 'EDUCATION'
+  EDUCATION = 'EDUCATION',
 }

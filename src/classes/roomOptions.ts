@@ -1,5 +1,1 @@
-
-
-export class RoomOptions {
-    
-}
+export class RoomOptions {}

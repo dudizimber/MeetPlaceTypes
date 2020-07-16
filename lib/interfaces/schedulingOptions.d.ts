@@ -1,5 +1,5 @@
-import { Weekday } from "../enums/weekday";
-import { RepeatOptions } from "../enums/repeat-options";
+import { Weekday } from '../enums/weekday';
+import { RepeatOptions } from '../enums/repeat-options';
 /**
  * Interface for scheduling activity
  *
