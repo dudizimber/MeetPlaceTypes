@@ -16,7 +16,6 @@
     "prettier": "^2.0.5",
     "tslint": "^6.1.2",
     "tslint-config-prettier": "^1.18.0",
-    "@google-cloud/firestore": "^3.8.6",
     "typescript": "^3.9.6"
   },
   "peerDependencies": {}

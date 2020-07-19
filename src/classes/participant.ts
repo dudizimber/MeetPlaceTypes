@@ -8,6 +8,7 @@ export class Participant implements User {
   lastName: string;
   email: string;
   documentId: string;
+  fullName: string;
 
   constructor(
     $firstName: string,
@@ -25,6 +26,8 @@ export class Participant implements User {
     this.lastName = $lastName;
     this.email = $email;
     this.documentId = $documentId;
+
+    this.fullName = `${this.firstName} ${this.lastName}`;
   }
 
   static fromFirestore(snap: any) {

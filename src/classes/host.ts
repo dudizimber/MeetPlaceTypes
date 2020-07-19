@@ -1,5 +1,4 @@
 import { User } from '../interfaces/user';
-import { DocumentSnapshot } from '@google-cloud/firestore';
 
 export class Host implements User {
   hostId: string;
@@ -31,7 +30,7 @@ export class Host implements User {
     this.fullName = `${this.firstName} ${this.lastName}`;
   }
 
-  static fromFirestore(snap: DocumentSnapshot) {
+  static fromFirestore(snap: any) {
     if (snap === null) return null;
     const data = snap.data() || {};
     return Host.fromMap({ ...data, hostId: snap.id });

@@ -6,3 +6,6 @@ export * from './time';
 export * from './user';
 export * from './videoConferenceOptions';
 export * from './videoQuality';
+export * from './scheduledTask';
+export * from './taskEndActivityInstance';
+export * from './taskStartActivityInstance';

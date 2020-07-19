@@ -7,6 +7,7 @@ export declare class Participant implements User {
     lastName: string;
     email: string;
     documentId: string;
+    fullName: string;
     constructor($firstName: string, $lastName: string, $email: string, $participantId: string, $roomCount: number, $avatar: string, $documentId: string);
     static fromFirestore(snap: any): Participant | null;
     static fromMap(data: any): Participant;

@@ -6,3 +6,4 @@ export * from './organization-type';
 export * from './repeat-options';
 export * from './weekday';
 export * from './video-conference-roles';
+export * from './scheduled-task-type';

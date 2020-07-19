@@ -6,7 +6,6 @@ import { ActivityOptions } from '../interfaces/activityOptions';
 import { ActivityInstance } from './activityInstance';
 import { SchedulingOptions } from '../interfaces/schedulingOptions';
 import { Room } from './room';
-import { DocumentSnapshot, Timestamp } from '@google-cloud/firestore';
 
 export class Activity {
   activityId: string;
@@ -65,19 +64,22 @@ export class Activity {
     this.room = $room;
   }
 
-  static fromFirestore(snap: DocumentSnapshot) {
+  static fromFirestore(snap: any) {
     if (snap === null || !snap.exists) return null;
     const data = snap.data() || {};
 
-    data.schedulingOptions.startDate =
-      data.schedulingOptions.startDate instanceof Timestamp
-        ? data.schedulingOptions.startDate.toDate()
-        : data.schedulingOptions.startDate;
-    data.schedulingOptions.endDate =
-      data.schedulingOptions.endDate instanceof Timestamp
-        ? data.schedulingOptions.endDate.toDate()
-        : data.schedulingOptions.endDate;
+    try {
+      data.schedulingOptions.startDate = data.schedulingOptions.startDate.toDate()
+    } catch (error) {
+      data.schedulingOptions.startDate = data.schedulingOptions.startDate;
+    }
 
+    try {
+      data.schedulingOptions.endDate = data.schedulingOptions.endDate.toDate()
+    } catch (error) {
+      data.schedulingOptions.endDate = data.schedulingOptions.endDate;
+    }
+    
     return Activity.fromMap({ ...data, activityId: snap.id });
   }
 

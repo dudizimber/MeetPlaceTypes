@@ -6,7 +6,6 @@ import { ActivityOptions } from '../interfaces/activityOptions';
 import { ActivityInstance } from './activityInstance';
 import { SchedulingOptions } from '../interfaces/schedulingOptions';
 import { Room } from './room';
-import { DocumentSnapshot } from '@google-cloud/firestore';
 export declare class Activity {
     activityId: string;
     name: string;
@@ -26,7 +25,7 @@ export declare class Activity {
     schedulingOptions: SchedulingOptions;
     room: Room;
     constructor($activityId: string, $name: string, $imageUrl: string, $body: string, $participantCount: number, $fileCount: number, $activityCategory: string, $isActive: boolean, $activityType: ActivityType, $activityOptions: ActivityOptions, $createdDate: Date, $updatedDate: Date, $creator: Host, $activityStatus: ActivityStatus, $nextActivityInstance: ActivityInstance, $schedulingOptions: SchedulingOptions, $room: Room);
-    static fromFirestore(snap: DocumentSnapshot): Activity | null;
+    static fromFirestore(snap: any): Activity | null;
     static fromMap(data: any): Activity;
     toMap(): {
         activityId: string;
