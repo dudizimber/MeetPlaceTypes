@@ -14,6 +14,8 @@ export declare class ActivityInstance {
     endDate: Date;
     isNext: boolean;
     constructor($activityInstanceId: string, $activity: Activity, $participantCount: number, $activityType: ActivityType, $activityOptions: ActivityOptions, $activityInstanceStatus: ActivityInstanceStatus, $fileCount: number, $startDate: Date, $endDate: Date);
+    static fromFirestore(snapshot: any): ActivityInstance;
+    static fromMap(data: any): ActivityInstance;
     toMap(): {
         activityInstanceId: string;
         activity: {

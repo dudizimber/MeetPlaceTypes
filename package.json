@@ -1,7 +1,6 @@
 {
-  "name": "meetplacetypes",
+  "name": "@vizodev/meetplacetypes",
   "version": "1.0.2",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
@@ -18,5 +17,18 @@
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.9.6"
   },
-  "peerDependencies": {}
+  "peerDependencies": {},
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dudizimber/MeetPlaceTypes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dudizimber/MeetPlaceTypes/issues"
+  },
+  "homepage": "https://github.com/dudizimber/MeetPlaceTypes#readme",
+  "description": ""
 }

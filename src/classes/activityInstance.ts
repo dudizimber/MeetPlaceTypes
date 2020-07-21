@@ -37,6 +37,33 @@ export class ActivityInstance {
     this.endDate = $endDate;
   }
 
+  static fromFirestore(snapshot: any) {
+    return ActivityInstance.fromMap({ ...snapshot.data(), activityInstanceId: snapshot.id });
+  }
+
+  static fromMap(data: any) {
+    let startDate;
+    let endDate;
+    try {
+      startDate = data.startDate.toDate();
+      endDate = data.endDate.toDate();
+    } catch (error) {
+      startDate = data.startDate;
+      endDate = data.endDate; 
+    }
+    return new ActivityInstance(
+      data.activityInstanceId,
+      data.activity,
+      data.participantCount,
+      data.activityType,
+      data.activityOptions,
+      data.activityInstanceStatus,
+      data.fileCount,
+      startDate,
+      endDate,
+    );
+  }
+
   toMap() {
     return {
       activityInstanceId: this.activityInstanceId ?? null,
