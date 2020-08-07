@@ -1,4 +1,4 @@
 export declare enum RepeatOptions {
-    DAILY = "DAILY",
-    WEEKLY = "WEEKLY"
+  DAILY = 'DAILY',
+  WEEKLY = 'WEEKLY',
 }

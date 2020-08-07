@@ -1,2 +1,1 @@
-export declare class FileOptions {
-}
+export declare class FileOptions {}

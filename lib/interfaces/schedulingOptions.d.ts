@@ -23,11 +23,11 @@ import { RepeatOptions } from '../enums/repeat-options';
  *
  */
 export interface SchedulingOptions {
-    startDate: Date;
-    endDate: Date;
-    isRecurring: boolean;
-    multiDay: boolean;
-    repeat?: RepeatOptions;
-    weekdays?: Weekday[];
-    cycles?: number;
+  startDate: Date;
+  endDate: Date;
+  isRecurring: boolean;
+  multiDay: boolean;
+  repeat?: RepeatOptions;
+  weekdays?: Weekday[];
+  cycles?: number;
 }

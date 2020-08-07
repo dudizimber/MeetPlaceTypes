@@ -3,4 +3,5 @@ export interface ScheduledTask {
     scheduledTaskId: string;
     date: Date;
     type: ScheduledTaskType;
+    expirationTime?: number;
 }

@@ -1,3 +1,3 @@
 export declare enum FileType {
-    PDF = "PDF"
+  PDF = 'PDF',
 }

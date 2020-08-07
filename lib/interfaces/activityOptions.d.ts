@@ -1,3 +1,3 @@
 export interface ActivityOptions {
-    maxFilesAllowed: number;
+  maxFilesAllowed: number;
 }

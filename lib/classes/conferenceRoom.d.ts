@@ -1,4 +1,4 @@
 export declare class ConferenceRoom {
-    channelId: string;
-    constructor($channelId: string);
+  channelId: string;
+  constructor($channelId: string);
 }
