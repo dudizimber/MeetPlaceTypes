@@ -43,7 +43,7 @@ export declare class Activity {
     $schedulingOptions: SchedulingOptions,
     $room: Room,
   );
-  static fromFirestore(snap: any): Activity | null;
+  static fromFirestore(snap: any): Activity;
   static fromMap(data: any): Activity;
   toMap(): {
     activityId: string;

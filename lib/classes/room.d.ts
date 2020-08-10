@@ -31,7 +31,7 @@ export declare class Room {
     $creator: Host,
     $roomOptions: RoomOptions,
   );
-  static fromFirestore(snap: any): Room | null;
+  static fromFirestore(snap: any): Room;
   static fromMap(data: any): Room;
   toMap(): {
     roomId: string;

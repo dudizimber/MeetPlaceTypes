@@ -17,7 +17,7 @@ export declare class Host implements User {
     $avatar: string,
     $documentId: string,
   );
-  static fromFirestore(snap: any): Host | null;
+  static fromFirestore(snap: any): Host;
   static fromMap(data: any): Host;
   toMap(): {
     firstName: string;

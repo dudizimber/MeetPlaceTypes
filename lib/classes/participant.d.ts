@@ -17,7 +17,7 @@ export declare class Participant implements User {
     $avatar: string,
     $documentId: string,
   );
-  static fromFirestore(snap: any): Participant | null;
+  static fromFirestore(snap: any): Participant;
   static fromMap(data: any): Participant;
   toMap(): {
     firstName: string;
