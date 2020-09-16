@@ -1,7 +1,7 @@
 import { VideoConferenceService } from "../enums";
-import { VideoConferenceOptions } from "./videoConferenceOptions";
+import { VideoConferenceServiceOptions } from "./videoConferenceServiceOptions";
 
-export interface VideoConferenceOptionsLiveSwitch extends VideoConferenceOptions {
+export interface VideoConferenceOptionsLiveSwitch extends VideoConferenceServiceOptions {
     videoConferenceService: VideoConferenceService.LIVESWITCH;
     channelId: string;
 }
