@@ -9,3 +9,6 @@ export * from './videoQuality';
 export * from './scheduledTask';
 export * from './taskEndActivityInstance';
 export * from './taskStartActivityInstance';
+export * from './videoConferenceServiceOptions';
+export * from './videoConferenceServiceOptionsLiveswitch';
+export * from './videoConferenceServiceOptionsZoom';

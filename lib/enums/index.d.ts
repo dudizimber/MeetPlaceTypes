@@ -8,3 +8,4 @@ export * from './weekday';
 export * from './video-conference-roles';
 export * from './scheduled-task-type';
 export * from './roles';
+export * from './video-conference-service';

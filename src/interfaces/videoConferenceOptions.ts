@@ -1,6 +1,8 @@
 import { ActivityOptions } from './activityOptions';
 import { VideoQuality } from './videoQuality';
 import { AudioQuality } from './audioQuality';
+import { VideoConferenceService } from '../enums';
+import { VideoConferenceServiceOptions } from './videoConferenceServiceOptions';
 
 export interface VideoConferenceOptions extends ActivityOptions {
   maxConferenceRoomsAllowed: boolean;
@@ -8,5 +10,5 @@ export interface VideoConferenceOptions extends ActivityOptions {
   hostAudioStreamQuality: AudioQuality;
   participantVideoStreamQuality: VideoQuality;
   participantAudioStreamQuality: AudioQuality;
-  channelId: string;
+  videoConferenceServiceOptions: VideoConferenceServiceOptions;
 }
