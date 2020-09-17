@@ -12,3 +12,6 @@ export * from './taskStartActivityInstance';
 export * from './videoConferenceServiceOptions';
 export * from './videoConferenceServiceOptionsLiveswitch';
 export * from './videoConferenceServiceOptionsZoom';
+export * from './credential';
+export * from './credentialData';
+export * from './credentialDataZoom';

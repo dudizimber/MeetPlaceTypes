@@ -5,4 +5,5 @@ export interface VideoConferenceOptionsZoom extends VideoConferenceServiceOption
     meetingId: string;
     meetingPassword: string;
     zoomApiKey: string;
+    credentialId: string;
 }
