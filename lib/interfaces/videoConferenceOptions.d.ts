@@ -8,4 +8,5 @@ export interface VideoConferenceOptions extends ActivityOptions {
   hostAudioStreamQuality: AudioQuality;
   participantVideoStreamQuality: VideoQuality;
   participantAudioStreamQuality: AudioQuality;
+  videoConferenceServiceOptions: VideoConferenceServiceOptions;
 }

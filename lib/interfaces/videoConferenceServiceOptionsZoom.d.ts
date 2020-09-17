@@ -1,6 +1,6 @@
 import { VideoConferenceService } from '../enums';
-import { VideoConferenceOptions } from './videoConferenceOptions';
-export interface VideoConferenceOptionsZoom extends VideoConferenceOptions {
+import { VideoConferenceServiceOptions } from './videoConferenceServiceOptions';
+export interface VideoConferenceOptionsZoom extends VideoConferenceServiceOptions {
   videoConferenceService: VideoConferenceService.ZOOM;
   meetingId: string;
   meetingPassword: string;
