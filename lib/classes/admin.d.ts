@@ -6,8 +6,8 @@ export declare class Admin implements User {
   lastName: string;
   email: string;
   documentId: string;
-  fullName: string;
   constructor($firstName: string, $lastName: string, $email: string, $adminId: string, $documentId: string);
+  get fullName(): string;
   static fromMap(data: any): Admin;
   static fromFirestore(snapshot: any): Admin;
   toMap(): {

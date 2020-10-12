@@ -7,7 +7,6 @@ export declare class Host implements User {
   lastName: string;
   email: string;
   documentId: string;
-  fullName: string;
   constructor(
     $firstName: string,
     $lastName: string,
@@ -17,6 +16,7 @@ export declare class Host implements User {
     $avatar: string,
     $documentId: string,
   );
+  get fullName(): string;
   static fromFirestore(snap: any): Host;
   static fromMap(data: any): Host;
   toMap(): {

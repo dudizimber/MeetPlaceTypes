@@ -6,7 +6,8 @@
     "build": "tsc",
     "format": "prettier --write \"lib/**/*.ts\" \"lib/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
-    "compile": "npm run lint && npm run build && npm run format"
+    "compile": "npm run lint && npm run build && npm run format",
+    "deploy": "npm run compile && git add * && git commit -m 'commit' && git push"
   },
   "author": "",
   "license": "ISC",

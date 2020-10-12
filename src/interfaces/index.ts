@@ -15,3 +15,6 @@ export * from './videoConferenceServiceOptionsZoom';
 export * from './credential';
 export * from './credentialData';
 export * from './credentialDataZoom';
+export * from './loginRequest';
+export * from './response';
+export * from './loginReponse';

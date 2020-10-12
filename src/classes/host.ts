@@ -8,7 +8,6 @@ export class Host implements User {
   lastName: string;
   email: string;
   documentId: string;
-  fullName: string;
 
   constructor(
     $firstName: string,
@@ -26,8 +25,10 @@ export class Host implements User {
     this.lastName = $lastName;
     this.email = $email;
     this.documentId = $documentId;
+  }
 
-    this.fullName = `${this.firstName} ${this.lastName}`;
+  public get fullName() : string {
+    return `${this.firstName} ${this.lastName}`;
   }
 
   static fromFirestore(snap: any) {

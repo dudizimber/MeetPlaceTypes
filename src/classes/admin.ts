@@ -8,7 +8,6 @@ export class Admin implements User {
   lastName: string;
   email: string;
   documentId: string;
-  fullName: string;
 
   constructor($firstName: string, $lastName: string, $email: string, $adminId: string, $documentId: string) {
     this.adminId = $adminId;
@@ -16,8 +15,10 @@ export class Admin implements User {
     this.lastName = $lastName;
     this.email = $email;
     this.documentId = $documentId;
-    
-    this.fullName = `${this.firstName} ${this.lastName}`;
+  }
+  
+  public get fullName() : string {
+    return `${this.firstName} ${this.lastName}`;
   }
 
   static fromMap(data: any) {
