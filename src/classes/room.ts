@@ -2,52 +2,23 @@ import { Host } from './host';
 import { RoomOptions } from './roomOptions';
 
 export class Room {
-  roomId: string;
-  name: string;
-  imageUrl: string;
-  body: any;
-  participantCount: number;
-  fileCount: number;
-  activityCount: number;
-  isActive: boolean;
-  canJoin: boolean;
-  hasOnGoingActivity: boolean;
-  createdDate: Date;
-  updatedDate: Date;
-  creator: Host;
-  roomOptions: RoomOptions;
 
   constructor(
-    $roomId: string,
-    $name: string,
-    $imageUrl: string,
-    $body: any,
-    $participantCount: number,
-    $fileCount: number,
-    $activityCount: number,
-    $isActive: boolean,
-    $canJoin: boolean,
-    $hasOnGoingActivity: boolean,
-    $createdDate: Date,
-    $updatedDate: Date,
-    $creator: Host,
-    $roomOptions: RoomOptions,
-  ) {
-    this.roomId = $roomId;
-    this.name = $name;
-    this.imageUrl = $imageUrl;
-    this.body = $body;
-    this.participantCount = $participantCount;
-    this.fileCount = $fileCount;
-    this.activityCount = $activityCount;
-    this.isActive = $isActive;
-    this.canJoin = $canJoin;
-    this.hasOnGoingActivity = $hasOnGoingActivity;
-    this.createdDate = $createdDate;
-    this.updatedDate = $updatedDate;
-    this.creator = $creator;
-    this.roomOptions = $roomOptions;
-  }
+    public roomId: string,
+    public name: string,
+    public imageUrl: string,
+    public body: any,
+    public participantCount: number,
+    public fileCount: number,
+    public activityCount: number,
+    public isActive: boolean,
+    public canJoin: boolean,
+    public hasOnGoingActivity: boolean,
+    public createdDate: Date,
+    public updatedDate: Date,
+    public creator: Host,
+    public roomOptions: RoomOptions,
+  ) { }
 
   static fromFirestore(snap: any) {
     if (snap === null || !snap.exists) return null;

@@ -11,13 +11,13 @@ export declare class File {
   createdDate: Date;
   body: string;
   constructor(
-    $fileId: string,
-    $name: string,
-    $fileType: FileType,
-    $fileUrl: string,
-    $fileOptions: FileOptions,
-    $creator: User,
-    $createdDate: Date,
-    $body: string,
+    fileId: string,
+    name: string,
+    fileType: FileType,
+    fileUrl: string,
+    fileOptions: FileOptions,
+    creator: User,
+    createdDate: Date,
+    body: string,
   );
 }

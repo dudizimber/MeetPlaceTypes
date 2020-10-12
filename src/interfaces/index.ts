@@ -17,4 +17,7 @@ export * from './credentialData';
 export * from './credentialDataZoom';
 export * from './loginRequest';
 export * from './response';
-export * from './loginReponse';
+export * from './loginResponse';
+export * from './loginFaceRecData';
+export * from './loginPasswordData';
+export * from './loginRequest';

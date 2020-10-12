@@ -10,14 +10,14 @@ export declare class Organization {
   country: string;
   organizationType: OrganizationType;
   constructor(
-    $organizationId: string,
-    $name: string,
-    $logoUrl: string,
-    $tenantId: string,
-    $email: string,
-    $city: string,
-    $country: string,
-    $organizationType: OrganizationType,
+    organizationId: string,
+    name: string,
+    logoUrl: string,
+    tenantId: string,
+    email: string,
+    city: string,
+    country: string,
+    organizationType: OrganizationType,
   );
   static fromFirestore(snap: any): Organization;
   static fromMap(data: any): Organization;

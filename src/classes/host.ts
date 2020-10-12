@@ -1,31 +1,15 @@
 import { User } from '../interfaces/user';
 
 export class Host implements User {
-  hostId: string;
-  roomCount: number;
-  avatar: string;
-  firstName: string;
-  lastName: string;
-  email: string;
-  documentId: string;
-
   constructor(
-    $firstName: string,
-    $lastName: string,
-    $email: string,
-    $hostId: string,
-    $roomCount: number,
-    $avatar: string,
-    $documentId: string,
-  ) {
-    this.hostId = $hostId;
-    this.roomCount = $roomCount ?? 0;
-    this.avatar = $avatar;
-    this.firstName = $firstName;
-    this.lastName = $lastName;
-    this.email = $email;
-    this.documentId = $documentId;
-  }
+    public firstName: string,
+    public lastName: string,
+    public email: string,
+    public hostId: string,
+    public roomCount: number,
+    public avatar: string,
+    public documentId: string,
+  ) {}
 
   public get fullName() : string {
     return `${this.firstName} ${this.lastName}`;

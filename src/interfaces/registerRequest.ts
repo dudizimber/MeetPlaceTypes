@@ -1,10 +1,10 @@
 import { LoginMethod } from "../enums";
 import { LoginFaceRecData } from "./loginFaceRecData";
 import { LoginPasswordData } from "./loginPasswordData";
+import { User } from "./user";
 
-export interface LoginRequest {
-    tenantId: string;
-    organizationId: string;
+export interface RegisterRequest {
     method: LoginMethod;
-    data: LoginPasswordData | LoginFaceRecData;
+    loginData: LoginFaceRecData | LoginPasswordData;
+    user: User;
 }

@@ -2,34 +2,16 @@ import { OrganizationType } from '../enums/organization-type';
 import { OrganizationMap } from '../interfaces/organizationMap';
 
 export class Organization {
-  organizationId: string;
-  name: string;
-  logoUrl: string;
-  tenantId: string;
-  email: string;
-  city: string;
-  country: string;
-  organizationType: OrganizationType;
-
   constructor(
-    $organizationId: string,
-    $name: string,
-    $logoUrl: string,
-    $tenantId: string,
-    $email: string,
-    $city: string,
-    $country: string,
-    $organizationType: OrganizationType,
-  ) {
-    this.organizationId = $organizationId;
-    this.name = $name;
-    this.logoUrl = $logoUrl;
-    this.tenantId = $tenantId;
-    this.email = $email;
-    this.city = $city;
-    this.country = $country;
-    this.organizationType = $organizationType;
-  }
+    public organizationId: string,
+    public name: string,
+    public logoUrl: string,
+    public tenantId: string,
+    public email: string,
+    public city: string,
+    public country: string,
+    public organizationType: OrganizationType,
+  ) {}
 
   static fromFirestore(snap: any) {
     const data = snap.data() || {};

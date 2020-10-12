@@ -1,32 +1,15 @@
 import { User } from '../interfaces/user';
 
 export class Participant implements User {
-  participantId: string;
-  roomCount: number;
-  avatar: string;
-  firstName: string;
-  lastName: string;
-  email: string;
-  documentId: string;
-
   constructor(
-    $firstName: string,
-    $lastName: string,
-    $email: string,
-    $participantId: string,
-    $roomCount: number,
-    $avatar: string,
-    $documentId: string,
-  ) {
-    this.participantId = $participantId;
-    this.roomCount = $roomCount;
-    this.avatar = $avatar;
-    this.firstName = $firstName;
-    this.lastName = $lastName;
-    this.email = $email;
-    this.documentId = $documentId;
-  }
-
+    public firstName: string,
+    public lastName: string,
+    public email: string,
+    public participantId: string,
+    public roomCount: number,
+    public avatar: string,
+    public documentId: string,
+  ) { }
   
   public get fullName() : string {
     return `${this.firstName} ${this.lastName}`;

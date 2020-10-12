@@ -16,20 +16,20 @@ export declare class Room {
   creator: Host;
   roomOptions: RoomOptions;
   constructor(
-    $roomId: string,
-    $name: string,
-    $imageUrl: string,
-    $body: any,
-    $participantCount: number,
-    $fileCount: number,
-    $activityCount: number,
-    $isActive: boolean,
-    $canJoin: boolean,
-    $hasOnGoingActivity: boolean,
-    $createdDate: Date,
-    $updatedDate: Date,
-    $creator: Host,
-    $roomOptions: RoomOptions,
+    roomId: string,
+    name: string,
+    imageUrl: string,
+    body: any,
+    participantCount: number,
+    fileCount: number,
+    activityCount: number,
+    isActive: boolean,
+    canJoin: boolean,
+    hasOnGoingActivity: boolean,
+    createdDate: Date,
+    updatedDate: Date,
+    creator: Host,
+    roomOptions: RoomOptions,
   );
   static fromFirestore(snap: any): Room;
   static fromMap(data: any): Room;

@@ -3,21 +3,16 @@ import { Host } from './host';
 import { ADMIN_HOST_AVATAR } from '../constants/constants';
 
 export class Admin implements User {
-  adminId: string;
-  firstName: string;
-  lastName: string;
-  email: string;
-  documentId: string;
-
-  constructor($firstName: string, $lastName: string, $email: string, $adminId: string, $documentId: string) {
-    this.adminId = $adminId;
-    this.firstName = $firstName;
-    this.lastName = $lastName;
-    this.email = $email;
-    this.documentId = $documentId;
-  }
   
-  public get fullName() : string {
+  constructor(
+    public firstName: string, 
+    public lastName: string, 
+    public email: string, 
+    public adminId: string, 
+    public documentId: string
+    ) {}
+
+  public get fullName(): string {
     return `${this.firstName} ${this.lastName}`;
   }
 
