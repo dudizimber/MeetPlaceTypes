@@ -20,4 +20,5 @@ export * from './response';
 export * from './loginResponse';
 export * from './loginFaceRecData';
 export * from './loginPasswordData';
-export * from './loginRequest';
+export * from './registerRequest';
+export * from './registerResponse';

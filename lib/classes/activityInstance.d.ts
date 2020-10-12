@@ -57,6 +57,7 @@ export declare class ActivityInstance {
             lastName: string;
             email: string;
             documentId: string;
+            avatar: string;
           };
       activityStatus: import('..').ActivityStatus;
       nextActivityInstance: ActivityInstance;

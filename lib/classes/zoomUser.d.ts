@@ -27,6 +27,7 @@ export declare class ZoomUser {
           lastName: string;
           email: string;
           documentId: string;
+          avatar: string;
         };
     role: Role;
   };

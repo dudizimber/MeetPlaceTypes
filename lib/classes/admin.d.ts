@@ -6,7 +6,15 @@ export declare class Admin implements User {
   email: string;
   adminId: string;
   documentId: string;
-  constructor(firstName: string, lastName: string, email: string, adminId: string, documentId: string);
+  avatar: string | null;
+  constructor(
+    firstName: string,
+    lastName: string,
+    email: string,
+    adminId: string,
+    documentId: string,
+    avatar: string | null,
+  );
   get fullName(): string;
   static fromMap(data: any): Admin;
   static fromFirestore(snapshot: any): Admin;
@@ -16,6 +24,7 @@ export declare class Admin implements User {
     lastName: string;
     email: string;
     documentId: string;
+    avatar: string;
   };
   toHost(): Host;
 }

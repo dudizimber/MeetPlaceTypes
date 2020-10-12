@@ -11,3 +11,4 @@ export * from './roles';
 export * from './video-conference-service';
 export * from './credential-service';
 export * from './login-method';
+export * from './api-error';

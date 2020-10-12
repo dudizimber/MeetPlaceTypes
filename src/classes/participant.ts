@@ -7,8 +7,8 @@ export class Participant implements User {
     public email: string,
     public participantId: string,
     public roomCount: number,
-    public avatar: string,
-    public documentId: string,
+    public avatar: string | null,
+    public documentId: string | null,
   ) { }
   
   public get fullName() : string {

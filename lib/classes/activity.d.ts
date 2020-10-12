@@ -74,6 +74,7 @@ export declare class Activity {
           lastName: string;
           email: string;
           documentId: string;
+          avatar: string;
         };
     activityStatus: ActivityStatus;
     nextActivityInstance: ActivityInstance;

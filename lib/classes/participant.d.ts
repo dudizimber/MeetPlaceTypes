@@ -5,16 +5,16 @@ export declare class Participant implements User {
   email: string;
   participantId: string;
   roomCount: number;
-  avatar: string;
-  documentId: string;
+  avatar: string | null;
+  documentId: string | null;
   constructor(
     firstName: string,
     lastName: string,
     email: string,
     participantId: string,
     roomCount: number,
-    avatar: string,
-    documentId: string,
+    avatar: string | null,
+    documentId: string | null,
   );
   get fullName(): string;
   static fromFirestore(snap: any): Participant;

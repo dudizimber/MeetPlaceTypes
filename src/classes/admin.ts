@@ -9,7 +9,8 @@ export class Admin implements User {
     public lastName: string, 
     public email: string, 
     public adminId: string, 
-    public documentId: string
+    public documentId: string,
+    public avatar: string | null,
     ) {}
 
   public get fullName(): string {
@@ -17,7 +18,7 @@ export class Admin implements User {
   }
 
   static fromMap(data: any) {
-    return new Admin(data.firstName, data.lastName, data.email, data.adminId, data.documentId);
+    return new Admin(data.firstName, data.lastName, data.email, data.adminId, data.documentId, data.avatar);
   }
 
   static fromFirestore(snapshot: any) {
@@ -31,6 +32,7 @@ export class Admin implements User {
       lastName: this.lastName,
       email: this.email,
       documentId: this.documentId,
+      avatar: this.avatar,
     };
   }
 
