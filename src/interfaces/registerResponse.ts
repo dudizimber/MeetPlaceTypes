@@ -1,4 +1,5 @@
 import { LoginMethod } from "../enums";
+import { Response } from "./response";
 
 export interface RegisterResponse extends Response {
     method: LoginMethod;
