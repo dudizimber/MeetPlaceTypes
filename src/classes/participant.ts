@@ -9,7 +9,7 @@ export class Participant implements User {
     public roomCount: number,
     public avatar: string | null,
     public documentId: string | null,
-    public meetingId?: string,
+    public meetingParticipantId?: string,
   ) { }
   
   public get fullName() : string {
@@ -31,7 +31,7 @@ export class Participant implements User {
       data.roomCount,
       data.avatar,
       data.documentId,
-      data.meetingId
+      data.meetingParticipantId
     );
   }
 
@@ -45,7 +45,7 @@ export class Participant implements User {
       avatar: this.avatar ?? null,
       documentId: this.documentId ?? null,
     };
-    if (this.meetingId) data['meetingId'] = this.meetingId;
+    if (this.meetingParticipantId) data['meetingParticipantId'] = this.meetingParticipantId;
     return data;
   }
 }
