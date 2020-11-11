@@ -35,12 +35,12 @@ export class Admin implements User {
 
   toMap() {
     const data = {
-      adminId: this.adminId,
-      firstName: this.firstName,
-      lastName: this.lastName,
-      email: this.email,
-      documentId: this.documentId,
-      avatar: this.avatar,
+      adminId: this.adminId ?? null,
+      firstName: this.firstName ?? null,
+      lastName: this.lastName ?? null,
+      email: this.email ?? null,
+      documentId: this.documentId ?? null,
+      avatar: this.avatar ?? null,
     };
     if (this.meetingParticipantId) data['meetingParticipantId'] = this.meetingParticipantId;
     return data;
