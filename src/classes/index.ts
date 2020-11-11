@@ -9,4 +9,4 @@ export * from './participant';
 export * from './room';
 export * from './roomOptions';
 export * from './host';
-export * from './zoomUser';
+export * from './meetingParticipant';
