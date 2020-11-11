@@ -7,6 +7,7 @@ export declare class Admin implements User {
   adminId: string;
   documentId: string;
   avatar: string | null;
+  meetingParticipantId?: string;
   constructor(
     firstName: string,
     lastName: string,
@@ -14,6 +15,7 @@ export declare class Admin implements User {
     adminId: string,
     documentId: string,
     avatar: string | null,
+    meetingParticipantId?: string,
   );
   get fullName(): string;
   static fromMap(data: any): Admin;

@@ -7,6 +7,7 @@ export declare class Host implements User {
   roomCount: number;
   avatar: string;
   documentId: string;
+  meetingParticipantId?: string;
   constructor(
     firstName: string,
     lastName: string,
@@ -15,6 +16,7 @@ export declare class Host implements User {
     roomCount: number,
     avatar: string,
     documentId: string,
+    meetingParticipantId?: string,
   );
   get fullName(): string;
   static fromFirestore(snap: any): Host;
