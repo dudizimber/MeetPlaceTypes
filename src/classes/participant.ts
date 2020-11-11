@@ -9,6 +9,7 @@ export class Participant implements User {
     public roomCount: number,
     public avatar: string | null,
     public documentId: string | null,
+    public meetingId?: string,
   ) { }
   
   public get fullName() : string {
@@ -30,11 +31,12 @@ export class Participant implements User {
       data.roomCount,
       data.avatar,
       data.documentId,
+      data.meetingId
     );
   }
 
   toMap() {
-    return {
+    const data = {
       firstName: this.firstName ?? null,
       lastName: this.lastName ?? null,
       email: this.email ?? null,
@@ -43,5 +45,7 @@ export class Participant implements User {
       avatar: this.avatar ?? null,
       documentId: this.documentId ?? null,
     };
+    if (this.meetingId) data['meetingId'] = this.meetingId;
+    return data;
   }
 }

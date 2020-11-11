@@ -7,6 +7,7 @@ export declare class Participant implements User {
   roomCount: number;
   avatar: string | null;
   documentId: string | null;
+  meetingId?: string;
   constructor(
     firstName: string,
     lastName: string,
@@ -15,6 +16,7 @@ export declare class Participant implements User {
     roomCount: number,
     avatar: string | null,
     documentId: string | null,
+    meetingId?: string,
   );
   get fullName(): string;
   static fromFirestore(snap: any): Participant;
